@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanwf.pojo.Person">
+  <select id="query" resultType="com.beanwf.pojo.Person">
+    select * from Person
+  </select>
+
+
+  <select id="queryByPersonId" resultType="com.beanwf.pojo.Person">
+    select * from person  where person_id::character varying = #{personId}
+  </select>
+
+   <insert id="insertPerson" parameterType="com.beanwf.pojo.Person">
+        insert into Person(person_name,person_age) values(#{personName},#{personAge})
+  </insert>
+
+  <update id="updatePerson" parameterType="com.beanwf.pojo.Person">
+        update  Person set person_name = #{personName},person_age = #{personAge}
+        where person_id::character varying = #{personId}
+  </update>
+</mapper>

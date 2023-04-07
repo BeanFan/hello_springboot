@@ -1,0 +1,6 @@
+# server:
+#   port: 8989
+
+# person:
+#  name: Jimmy
+#  friends: zhangsan,lisi

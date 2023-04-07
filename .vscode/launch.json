@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "HelloSpringbootApplicationTests",
+            "request": "launch",
+            "mainClass": "com.beanwf.hello_springboot.HelloSpringbootApplicationTests",
+            "projectName": "hello_springboot"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HelloSpringbootApplication<hello_springboot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.beanwf.HelloSpringbootApplication",
+            "projectName": "hello_springboot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
